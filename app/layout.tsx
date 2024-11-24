@@ -45,10 +45,11 @@ export default function RootLayout({
             <Navbar />
             <main className="container mx-auto max-w-7xl px-6 flex-grow relative grid grid-cols-12 gap-4">
               {children}
-
-              <Socials />
             </main>
-            <NextPage />
+            <div className="container mx-auto max-w-7xl px-6 relative flex justify-end">
+              <Socials />
+              <NextPage />
+            </div>
           </div>
         </Providers>
       </body>

@@ -6,14 +6,14 @@ import { BsArrowRight } from "react-icons/bs"
 
 export const NextPage = () => {
   return (
-    <div className="w-full">
+    <div className="w-auto mb-4">
       <Link href="/about" className={
         clsx(
           titleFont.variable, 
-          "bottom-4 right-4 flex flex-col items-end font-title"
+          "flex flex-col items-end font-title relative"
         )
       }>
-        <BsArrowRight className="w-11 h-11 fill-secondary dark:fill-white-primary -mb-2"/>
+        <BsArrowRight className="w-11 h-11 fill-secondary dark:fill-white-primary absolute -top-8"/>
         <span  className={`text-xl text-secondary dark:text-white-primary`}>
           about me
         </span>

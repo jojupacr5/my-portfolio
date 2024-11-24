@@ -1,3 +1,4 @@
+'use client'
 import { Link } from "@nextui-org/link"
 import { FaLinkedin } from "react-icons/fa"
 
@@ -7,7 +8,7 @@ import { GithubIcon, TwitterIcon } from "@/components/icons"
 
 export const Socials = () => {
   return (
-    <div className="absolute bottom-4 left-4 flex-col justify-center items-center hidden sm:flex gap-3 text-secondary dark:text-white-primary">
+    <div className="absolute bottom-4 left-6 flex-col justify-center items-center hidden sm:flex gap-3 text-secondary dark:text-white-primary">
       <div className="w-1 bg-secondary dark:bg-white-primary h-12"></div>
 
       <Link isExternal aria-label="Github" href={siteConfig.links.github} className="text-secondary dark:text-white-primary hover:text-primary dark:hover:text-primary transition-all">

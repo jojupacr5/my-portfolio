@@ -6,7 +6,7 @@ import { titleFont } from "@/config/fonts";
 
 export default function ContactPage() {
   return (
-    <section className="place-self-center relative col-start-1 col-end-13 sm:my-0 sm:col-start-2 sm:col-span-11">
+    <section className="place-self-center relative col-start-1 col-end-13 sm:my-0 sm:col-start-2 sm:col-end-11">
 
       <div className="relative max-w-[350px] sm:max-w-[500px] md:max-w-[590px] lg:max-w-[780px]">
         <CustomSpan text="<h2>" />
