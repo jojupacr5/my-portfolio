@@ -19,11 +19,12 @@ export const ActiveLink = ({ path, text}: Props) => {
     <NavbarItem>
       <Link
         className={clsx(
-          'text-secondary dark:text-white-primary hover:!text-primary',
+          'text-secondary dark:text-white-primary relative group',
           (pathName === path) && '!text-primary !font-medium'
         )}
         href={path}
       >
+        <span className="w-0 h-[1px] transition-all group-hover:w-full bg-primary dark:bg-primary absolute bottom-0 left-0" />
         {text}
       </Link>
     </NavbarItem>

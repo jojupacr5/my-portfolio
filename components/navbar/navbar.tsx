@@ -19,6 +19,7 @@ import {
 } from "@/components/icons";
 import { titleFont } from "@/config/fonts";
 import { ActiveLink } from "./ActiveLink";
+import { FaLinkedin } from "react-icons/fa";
 
 export const Navbar = () => {
  
@@ -76,6 +77,9 @@ export const Navbar = () => {
             </Link>
             <Link isExternal aria-label="twitter" href={siteConfig.links.twitter}>
               <TwitterIcon className="dark:text-white-primary text-secondary hover:!text-primary" />
+            </Link>
+            <Link isExternal aria-label="twitter" href={siteConfig.links.linkedin}>
+              <FaLinkedin className="w-5 h-5 dark:text-white-primary text-secondary hover:!text-primary" />
             </Link>
           </div>
         </div>
