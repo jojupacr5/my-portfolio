@@ -13,7 +13,7 @@ export const CustomSpan = ({ text, ml, mb, absolute, variation, subtitle }: Prop
   return (
     <div className={`flex flex-col ${mb ? mb : ''} ${absolute ? absolute : ''}`}>
       <span 
-        className={`${variation ? '' : titleFont.className} text-sm md:text-md text-black-secondary dark:text-white-secondary ${ml ? ml : ''}`}
+        className={`${variation ? '' : titleFont.className} text-xs md:text-sm text-black-secondary dark:text-white-secondary ${ml ? ml : ''}`}
       >
         { text }
         {

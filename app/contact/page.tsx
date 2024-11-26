@@ -2,6 +2,8 @@ import clsx from "clsx";
 
 import { CustomSpan } from "@/components";
 import { titleFont } from "@/config/fonts";
+import { Link } from "@nextui-org/link";
+import { siteConfig } from "@/config/site";
 
 
 export default function ContactPage() {
@@ -16,21 +18,30 @@ export default function ContactPage() {
         )}>
           joseph.paucar<br/>@gmail.com
         </h2>
-        <CustomSpan text="</h2>" absolute="absolute -bottom-2 -right-5" />
+        <CustomSpan text="</h2>" />
       </div>
 
-      <div className="relative my-10 text-secondary dark:text-white-primary text-md">
+      <div className="relative mt-12 mb-6 text-secondary dark:text-white-primary text-md">
         <CustomSpan text="<p>" />
-        <p className=" mb-2">
+        <p className="mb-2">
           So, are you looking for a professional, communicative & adaptable software engineer with extensive web development skills?
         </p>
-        <p className="text-md mb-2">
+        <p className="mb-2">
           If you have an application you are interested in developing, a problem that needs to be solve or a project that needs rescuing, I'd love to help you with it.
         </p>
-        <p className="text-md mb-2">
-          You can also message me on my socials: <a href="">Instagram</a> or <a href="">LinkedIn</a>. 
+        <p>
+          You can also message me on my socials: 
+          <Link isExternal href={siteConfig.links.instagram} className="relative group mx-1">
+            <span className="w-0 h-[1px] transition-all group-hover:w-full bg-primary dark:bg-primary absolute bottom-0 left-0" />
+            Instagram
+          </Link> 
+          or 
+          <Link isExternal href={siteConfig.links.linkedin} className="relative group ml-1">
+            <span className="w-0 h-[1px] transition-all group-hover:w-full bg-primary dark:bg-primary absolute bottom-0 left-0" />
+            LinkedIn
+          </Link>. 
         </p>
-        <CustomSpan text="</p>" absolute="absolute -bottom-2 left-20" />
+        <CustomSpan text="</p>" />
       </div>
 
       <CustomSpan text="</html>" />

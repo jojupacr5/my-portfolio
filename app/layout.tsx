@@ -6,7 +6,7 @@ import { Providers } from "./providers";
 
 import { siteConfig } from "@/config/site";
 import { nunito } from "@/config/fonts";
-import { Navbar, NextPage, Socials } from "@/components";
+import { Navbar, NextPage, Socials, Footer } from "@/components";
 
 export const metadata: Metadata = {
   title: {
@@ -49,6 +49,7 @@ export default function RootLayout({
             <div className="container mx-auto max-w-7xl px-6 relative flex justify-end">
               <Socials />
               <NextPage />
+              <Footer />
             </div>
           </div>
         </Providers>

@@ -16,7 +16,7 @@ export default function Error({
   }, [error]);
 
   return (
-    <div>
+    <section className="place-self-center relative col-start-1 col-end-13 sm:my-0 sm:col-start-2 sm:col-end-11">
       <h2>Something went wrong!</h2>
       <button
         onClick={
@@ -26,6 +26,6 @@ export default function Error({
       >
         Try again
       </button>
-    </div>
+    </section>
   );
 }
