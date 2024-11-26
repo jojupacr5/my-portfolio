@@ -11,7 +11,7 @@ export default function ProjectPage() {
       <div className="relative mb-12">
         <span
           className={clsx(
-            "absolute -ml-6 -mt-[16px] font-nunito text-6xl block",
+            "absolute -ml-5 -mt-[16px] font-nunito text-6xl block",
             nunito.variable,
           )}
         >

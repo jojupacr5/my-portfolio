@@ -1,3 +1,4 @@
+import { siteConfig } from "@/config/site"
 import { CustomSpan } from "../ui/pages/CustomSpan"
 
 export const AboutMe = () => {
@@ -6,10 +7,10 @@ export const AboutMe = () => {
       <CustomSpan text="josephpaucar@pc:~$" ml="-ml-2 md:-ml-3" variation={true} subtitle="nano about-me.txt"/>
 
       <p className="text-secondary dark:text-white-primary text-md mt-4 mb-2">
-        Soy un desarrollador de aplicaciones web residiendo en Lima, Perú, trabajo de forma independiente y estoy abierto a ofertas laborales. 
+        { siteConfig.aboutMe[0] }
       </p>
       <p className="text-secondary dark:text-white-primary text-md mb-4">
-        Me apasiona todo el proceso de creación de productos digitales y con el uso de nuevas tecnologias, mis conocimientos en desarrollo, diseño y ux, ayudo a mis clientes a dar vida a sus ideas o mejorar sus productos digitale.
+        { siteConfig.aboutMe[1] }
       </p>
     </>
   )

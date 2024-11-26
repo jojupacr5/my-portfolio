@@ -36,7 +36,7 @@ export default function Home() {
       </div>
 
       <div>
-        <Link className="px-6 py-2 mr-6 border border-secondary dark:border-primary text-secondary dark:text-white-primary hover:border-primary hover:bg-white-secondary dark:hover:bg-primary transition-all" href="/projects/1">
+        <Link className="px-6 py-2 mr-6 border border-secondary dark:border-primary text-secondary dark:text-white-primary hover:border-primary hover:bg-white-secondary dark:hover:bg-primary transition-all" href="/projects">
           Projects
         </Link>
         <button className="py-0 px-1 group relative border-black-secondary text-secondary dark:text-white-primary">
