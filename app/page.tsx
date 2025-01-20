@@ -39,10 +39,10 @@ export default function Home() {
         <Link className="px-6 py-2 mr-6 border border-secondary dark:border-primary text-secondary dark:text-white-primary hover:border-primary hover:bg-white-secondary dark:hover:bg-primary transition-all" href="/projects">
           Projects
         </Link>
-        <button className="py-0 px-1 group relative border-black-secondary text-secondary dark:text-white-primary">
+        <Link isExternal href="https://www.linkedin.com/in/joseph-paucar/" className="py-0 px-1 group relative border-black-secondary text-secondary dark:text-white-primary">
           <div className="w-0 h-[1px] transition-all group-hover:w-full bg-primary dark:bg-primary absolute bottom-0 left-0" />
           View CV
-        </button>
+        </Link>
       </div> 
 
       {/* <div className="block sm:hidden mt-12 mb-24 col-start-1 col-end-13 sm:my-0 sm:-mt-10 ">
